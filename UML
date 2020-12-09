@@ -1,0 +1,4 @@
+[Client]->[«interface» Aggregate|+createIterator()]
+[Client]->[«interface» Iterator|+next()]
+[ConcreteAggregate|+creatIterator(): Context]-^[«interface» Aggregate|+createIterator()]
+[ConcreteIterator|+next(): Context]-^[«interface» Iterator|+next()]
